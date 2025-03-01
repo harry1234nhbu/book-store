@@ -3,9 +3,11 @@
 
 <style>
 
+body{
+    background-image: url("Images/background_all.jpg");
+}
 
-
-form.options{
+.options{
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -36,7 +38,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-gap: 20px;
+gap: 15px;
     
 }
 
@@ -70,8 +72,10 @@ gap: 20px;
     }
 
 </style>
-<link rel="stylesheet" href="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\CSS\all_books.css">
-<link rel="stylesheet" href="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\CSS\all_books_SummaryConfig.css">
+<link rel="stylesheet" href="CSS/all_books.css">
+<link rel="stylesheet" href="CSS/all_books_SummaryConfig.css">
+
+
 
 
 <head>
@@ -89,7 +93,7 @@ gap: 20px;
     <a href="file:///C:/Users/harry/OneDrive/Desktop/Assignment%20WEBSITE/Assignment/Htlm/review.html">
         <p>Review</p>
       </a>
-      <a href="file:///C:/Users/harry/OneDrive/Desktop/Assignment%20WEBSITE/Assignment/Htlm/contact.html">
+      <a href=file:///C:/Users/harry/OneDrive/1st%20YEAR%20UTM/2nd%20SEMESTER%201stYEAR/WEB%20DESIGN%202nd%20Semester%20II%20WED/classwork/contact_page.html>
         <p>Contact</p>
       </a>
       <a class="bookshop"
@@ -119,8 +123,8 @@ gap: 20px;
 
            
    
-<form class="options" id="options">
-   <div class="button-genre">
+
+   <div class="button-genre options" id="options">
                     <button class="button" onclick="toggleGenre('all')">All</button>
                     <button class="button" onclick="toggleGenre('Fiction')">Fiction</button>
                     <button class="button" onclick="toggleGenre('Mystery')">Mystery</button>
@@ -131,26 +135,30 @@ gap: 20px;
                     <button class="button" onclick="toggleGenre('Romance')">Romance</button>
                     <button class="button" onclick="toggleGenre('Magic')">Magic</button>
                     <button class="button" onclick="toggleGenre('Science-Fiction')">Sci-Fi</button>
+                    <button class="button" onclick="toggleGenre('19th-century')">19-Centuty</button>
                 </div>
 
-        </form>
         
 <form class="scroll-form" id="scroll-form" >
     <section class="scroll-section">
 
-   <button class="display-summary books Fantasy Fiction Magic Romance" type="button" onclick="displaySummary('wicked-gods')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\to-gaze-upon-wicked-gods.jpg">
+   <button class="display-summary books Fantasy Fiction Magic Romance" type="button" onclick="displaySummary('wicked-gods')">
+     <img src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\to_gaze.jpg" >
 <section class="all-title">To Gaze Upon Wicked Gods</section>
 </button>
 
-<button class="display-summary books Fantasy Magic Romance 19th-century" type="button" onclick="displaySummary('stand-still')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Where-the-Dark-Stands-Still-by-A.B.-Poranek-Download.jpg">
+<button class="display-summary books Fantasy Magic Romance 19th-century" type="button" onclick="displaySummary('stand-still')">
+     <img src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\stand_still.jpg">
     <section>Where the Dark Stands Still</section>
     </button>
 
-    <button class="display-summary books Fantasy supernatural Mystery Adventure Action" type="button" onclick="displaySummary('lotm')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\00275-lord-of-the-mysteries-wn.jpg">
+    <button class="display-summary books Fantasy Supernatural Mystery Adventure Action" type="button" onclick="displaySummary('lotm')">
+         <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\lotm.jpg">
         <section>Lord of the Mysteries</section>
         </button>
 
-        <button class="display-summary books Fantasy Fiction Science-Fiction Comedy" type="button" onclick="displaySummary('reader-v')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Omniscient-Readers-Viewpoint-Vol.-1-by-Singshong-Download.png">
+        <button class="display-summary books Fantasy Fiction Science-Fiction Comedy" type="button" onclick="displaySummary('reader-v')">
+             <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\reader_v.png">
             <section>Omniscient Reader’s Viewpoint</section>
             </button>
 
@@ -159,38 +167,46 @@ gap: 20px;
 
 
 
-    <button class="display-summary books Mystery Adventure Science-Fiction Comedy" type="button" onclick="displaySummary('perfect-run')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\36735-the-perfect-run.jpg">
+    <button class="display-summary books Mystery Adventure Science-Fiction Comedy" type="button" onclick="displaySummary('perfect-run')">
+         <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\perfect_run.jpg">
         <section>The Perfect Run</section>
         </button>
 
-        <button class="display-summary books Mystery 19th-century" type="button" onclick="displaySummary('holmes')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Holmes-and-Watson-by-June-Thomson-Download.jpg">
+        <button class="display-summary books Mystery 19th-century" type="button" onclick="displaySummary('holmes')">
+             <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\holmes.jpg">
             <section>Holmes and Watson</section>
             </button>
 
-            <button class="display-summary books Romance Adventure Fantasy Action" type="button" onclick="displaySummary('shadow')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Shadow-Slave-301-400-by-Guiltythree-Download.jpg">
+            <button class="display-summary books Romance Adventure Fantasy Action" type="button" onclick="displaySummary('shadow')">
+                 <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\shadow.jpg">
                 <section>Shadow Slave</section>
                 </button>
 
-                <button class="display-summary books Romance Adventure Fantasy 19th-century" type="button" onclick="displaySummary('mother')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Mother-of-Learning-All-ARCs-by-nobody103-Download.jpg">
+                <button class="display-summary books Romance Adventure Fantasy 19th-century" type="button" onclick="displaySummary('mother')">
+                     <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\moter.jpg">
                     <section>Mother of Learning</section>
                     </button>
     
 
 
     
-        <button class="display-summary books Fantasy Fiction" type="button" onclick="displaySummary('poppy')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-The-Poppy-War-Perang-Opium-by-R.F.-Kuang-Download.jpg">
+        <button class="display-summary books Fantasy Fiction" type="button" onclick="displaySummary('poppy')">
+             <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\poppy_war.jpg">
             <section>The Poppy War – Perang Opium</section>
             </button>
 
-            <button class="display-summary books Fantasy Fiction" type="button" onclick="displaySummary('dragon')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-The-Dragon-Republic-The-Poppy-War-2-Download.jpg">
+            <button class="display-summary books Fantasy Fiction" type="button" onclick="displaySummary('dragon')">
+                 <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\dragon.jpg">
                 <section>The Dragon Republic</section>
                 </button>
 
-                <button class="display-summary books mystery 19th-century" type="button" onclick="displaySummary('hyouka')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Hyouka-by-Honobu-Yonezawa-Download.jpg">
+                <button class="display-summary books Mystery 19th-century" type="button" onclick="displaySummary('hyouka')">
+                     <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\hyouka.jpg">
                     <section>Hyouka</section>
                     </button>
 
-                    <button class="display-summary books Adventure Fantasy Fiction 19th-century" type="button" onclick="displaySummary('hobbit')"> <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-The-Hobbit-or-There-and-Back-Again-The-Lord-of-the-Rings-0-by-J.R.R.-Tolkien-Download.jpg">
+                    <button class="display-summary books Adventure Fantasy Fiction 19th-century" type="button" onclick="displaySummary('hobbit')">
+                         <img src= "C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\hobbit.jpg">
                         <section>The Hobbit</section>
                         </button>
        
@@ -214,15 +230,15 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\to-gaze-upon-wicked-gods.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\to_gaze.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: Molly X. Chang</p>
             <p>Date published: April 16, 2024</p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 750</section>
-        <button>Buy</button>
+        <section class="price">Price: Rs 780</section>
+        <button type="button" onclick="goToPage('wicked-gods')">Buy</button>
         
         </section>
         </td>
@@ -265,7 +281,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Where-the-Dark-Stands-Still-by-A.B.-Poranek-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\stand_still.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: A.B. Poranek</p>
@@ -273,7 +289,7 @@ gap: 20px;
         <p>Language: English</p></section>
         <section>
         <section class="price">Price: Rs 750</section>
-        <button>Buy</button>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -310,15 +326,15 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\00275-lord-of-the-mysteries-wn.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\lotm.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: Cuttlefish That Loves Diving</p>
             <p>Date published: January 1, 2020</p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 750</section>
-        <button>Buy</button>
+        <section class="price">Price: Rs 820</section>
+        <button type="button" onclick="goToPage()" >Buy</button>
         
         </section>
         </td>
@@ -357,7 +373,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Omniscient-Readers-Viewpoint-Vol.-1-by-Singshong-Download.png">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\reader_v.png">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: Singshong</p>
@@ -365,8 +381,8 @@ gap: 20px;
             </p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 750</section>
-        <button>Buy</button>
+        <section class="price">Price: Rs 800</section>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -403,7 +419,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\36735-the-perfect-run.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\perfect_run.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: Maxime J. Durand (Void Herald)</p>
@@ -411,8 +427,8 @@ gap: 20px;
             </p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 750</section>
-        <button onclick=>Buy</button>
+        <section class="price">Price: Rs 800</section>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -452,7 +468,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Holmes-and-Watson-by-June-Thomson-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\holmes.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: June Thomson</p>
@@ -460,8 +476,8 @@ gap: 20px;
             </p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 750</section>
-        <button onclick=>Buy</button>
+        <section class="price">Price: Rs 1000</section>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -496,7 +512,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Shadow-Slave-301-400-by-Guiltythree-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\shadow.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: Guiltythree</p>
@@ -504,8 +520,8 @@ gap: 20px;
             </p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 350</section>
-        <button onclick=>Buy</button>
+        <section class="price">Price: Rs 790</section>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -543,7 +559,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Mother-of-Learning-All-ARCs-by-nobody103-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\moter.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: Nobody103</p>
@@ -551,8 +567,8 @@ gap: 20px;
             </p>
         <p>Language: English</p></section>
         <section>
-        <section class="price">Price: Rs 350</section>
-        <button onclick=>Buy</button>
+        <section class="price">Price: Rs 800</section>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -596,7 +612,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-The-Poppy-War-Perang-Opium-by-R.F.-Kuang-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\poppy_war.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: R.F. Kuang</p>
@@ -605,7 +621,7 @@ gap: 20px;
         <p>Language: English</p></section>
         <section>
         <section class="price">Price: Rs 780</section>
-        <button onclick=>Buy</button>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -647,7 +663,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-The-Dragon-Republic-The-Poppy-War-2-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\dragon.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: R.F. Kuang</p>
@@ -656,7 +672,7 @@ gap: 20px;
         <p>Language: English</p></section>
         <section>
         <section class="price">Price: Rs 780</section>
-        <button onclick=>Buy</button>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -700,7 +716,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-The-Hobbit-or-There-and-Back-Again-The-Lord-of-the-Rings-0-by-J.R.R.-Tolkien-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\hobbit.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: J.R.R. Tolkien</p>
@@ -709,7 +725,7 @@ gap: 20px;
         <p>Language: English</p></section>
         <section>
         <section class="price">Price: Rs 1000</section>
-        <button onclick=>Buy</button>
+        <button type="button" onclick="goToPage()">Buy</button>
         
         </section>
         </td>
@@ -748,7 +764,7 @@ gap: 20px;
             <td class="book-cover">
            <section>
 
-            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\PDF-EPUB-Hyouka-by-Honobu-Yonezawa-Download.jpg">
+            <img style="margin-top: 20px;" src="C:\Users\harry\OneDrive\Desktop\Assignment WEBSITE\Assignment\Images\hyouka.jpg">
         </section>
         
         <section class="book-cover-info" style="margin-top: 40px; font-size: 20px;"><p>Author: R.F. Kuang</p>
@@ -757,7 +773,7 @@ gap: 20px;
         <p>Language: English</p></section>
         <section>
         <section class="price">Price: Rs 1000</section>
-        <button onclick=>Buy</button>
+        <button class="buy" id="buy" type="button" onclick="goToPage('hyouka')">Buy</button>
         
         </section>
         </td>
@@ -796,15 +812,18 @@ function displaySummary(id){
     const summary =document.getElementById(id);
     const displayForm = document.getElementById("scroll-form");
    const header = document.getElementById("all-book-header");
+   const options = document.getElementById("options");
 
    if(summary.style.display === "none"){
 summary.style.display = "block";
 displayForm.style.display ="none";
 header.style.display = "none";
+options.style.display = "none";
    }else{
     summary.style.display ="none";
     displayForm.style.display = "initial";
     header.style.display = "flex";
+    options.style.display = "flex";
    }
 }
 
@@ -812,15 +831,20 @@ function back(id){
     const summary = document.getElementById(id);
     const displayForm = document.getElementById("scroll-form");
     const header = document.getElementById("all-book-header");
+    const options = document.getElementById("options");
 
     if(summary.style.display === "block"){
 summary.style.display ="none";
 displayForm.style.display = "initial";
 header.style.display = "flex";
+options.style.display = "flex";
+
     }else{
         summary.style.display = "block";
 displayForm.style.display ="none";
 header.style.display = "none";
+options.style.display = "none";
+
     }
 }
 
@@ -867,7 +891,12 @@ let selectedGenres = [];
             const hasAllGenres = selectedGenres.every(genre => book.classList.contains(genre));
             book.classList.toggle('hidden', !hasAllGenres);
         });
-    }   
+    } 
+
+    function goToPage(){
+window.location.href ="file:///C:/Users/harry/OneDrive/Desktop/Assignment%20WEBSITE/Assignment/Buy_info.html"
+    }
+
 
 
 </script>

@@ -1,4 +1,4 @@
-main .book-summary{
+  main .book-summary{
     background-color: rgba(0,0,0,0.1);
       backdrop-filter: blur(10px);
     border: solid white;
